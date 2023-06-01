@@ -1,0 +1,135 @@
+.login-container {
+  margin: 2.4rem 0;
+  padding: 2rem 1rem;
+  min-width: 100vw !important;
+  box-shadow: 0 0 0 2.4rem var(--primary-color);
+  min-height: calc(100vh - 4.8rem);
+  display: grid;
+  grid-template-areas: "leftPictures rightform";
+}
+#rightform,
+#leftPictures {
+  width: 49vw;
+}
+@media only screen and (max-width: 800px) {
+  #rightform,
+  #leftPictures {
+    width: 48vw;
+  }
+}
+#rightform {
+  grid-area: rightform;
+}
+#leftPictures {
+  grid-area: leftPictures;
+  position: relative;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+
+  border-radius: 10px;
+  padding: 1rem;
+}
+.startingIcon {
+  display: flex;
+  width: 3.4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.middledesc {
+  text-align: start;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.middledesc h2 {
+  color: #fff;
+  font-size: var(--font-medium);
+  font-weight: var(--fw-medium);
+}
+.bottominfo {
+  position: absolute;
+  width: 90%;
+  padding: 1rem;
+  bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.social-links {
+  width: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.formlogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.3rem;
+}
+.formlogo h2 {
+  color: var(--primary-color);
+  font-size: var(--font-bigger);
+  font-weight: var(--fw-bold);
+}
+.formlogo h2 span {
+  color: var(--theme-color);
+}
+.inputscontainer {
+  width: 70%;
+  margin-inline: auto;
+}
+.loginInputs {
+  width: 100%;
+  margin-bottom: 0.78rem;
+  padding: 0.457rem;
+  border: 2px solid var(--text-color);
+  border-radius: 6px;
+  outline: none;
+  color: black;
+}
+
+#forgetPassword {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+#forgetPassword span:hover {
+  color: var(--theme-color);
+}
+.loginButton {
+  background-color: var(--primary-color);
+  color: #fff;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: var(--font-sm);
+  margin-block: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px var(--primary-color);
+}
+.signUpPara {
+  color: gray;
+  margin-top: 2rem;
+}
+.signUpPara span {
+  color: var(--theme-color);
+  font-size: var(--font-sm);
+  font-weight: var(--fw-medium);
+}
+
+@media only screen and (max-width: 688px) {
+ 
+  .login-container {
+    height: unset;
+    grid-template-areas: "leftPictures"
+    "rightform";
+  }
+ 
+  #leftPictures {
+    width:unset;
+    height: 450px;
+    margin-bottom: 2rem;
+  }
+  #rightform {
+    width:unset;
+  }
+}
